@@ -74,7 +74,7 @@ async function analyzeEmail() {
 
         showError(
             "Could not connect to the prediction server. " +
-            "Make sure the Flask backend is running."
+            "Please try again in a moment."
         );
 
         console.error(error);
