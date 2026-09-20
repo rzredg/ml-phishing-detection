@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #172033;
+    min-height: 100vh;
+}
+
+.container {
+    width: min(900px, 92%);
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: #e8eef8;
+    color: #36527a;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    margin-bottom: 15px;
+}
+
+.header h1 {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.header p {
+    color: #687386;
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.card {
+    background: white;
+    border: 1px solid #e0e5ed;
+    border-radius: 14px;
+    padding: 30px;
+    box-shadow: 0 8px 30px rgba(30, 50, 80, 0.06);
+    margin-bottom: 25px;
+}
+
+.input-group {
+    margin-bottom: 22px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    border: 1px solid #ccd3df;
+    border-radius: 8px;
+    padding: 13px 14px;
+    font-family: inherit;
+    font-size: 15px;
+    color: #172033;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #526b92;
+    box-shadow: 0 0 0 3px rgba(82, 107, 146, 0.12);
+}
+
+textarea {
+    min-height: 250px;
+    resize: vertical;
+    line-height: 1.5;
+}
+
+button {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 14px;
+    background: #172033;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #26344d;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.result-card {
+    padding: 30px;
+}
+
+.result-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.result-label {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    color: #7a8494;
+}
+
+.result-header h2 {
+    margin-top: 5px;
+    font-size: 32px;
+}
+
+.result-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #edf1f6;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.probability-row {
+    margin-bottom: 22px;
+}
+
+.probability-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.progress-bar {
+    height: 10px;
+    background: #e9edf3;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+.progress-fill.phishing {
+    background: #c94b4b;
+}
+
+.progress-fill.legitimate {
+    background: #4d8b68;
+}
+
+.disclaimer {
+    margin-top: 30px;
+    padding: 14px;
+    border-radius: 8px;
+    background: #f5f7fa;
+    color: #697386;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.error {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    background: #fff0f0;
+    color: #a33a3a;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    color: #8993a3;
+    font-size: 12px;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 35px 0;
+    }
+
+    .header h1 {
+        font-size: 32px;
+    }
+
+    .card {
+        padding: 22px;
+    }
+}

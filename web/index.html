@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ML Phishing Detection</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header class="header">
+            <div class="badge">MACHINE LEARNING SECURITY</div>
+
+            <h1>ML Phishing Detection</h1>
+
+            <p>
+                Analyze an email using a machine learning classifier
+                trained on phishing and legitimate email data.
+            </p>
+        </header>
+
+
+        <section class="card">
+
+            <div class="input-group">
+                <label for="subject">Email Subject</label>
+
+                <input
+                    type="text"
+                    id="subject"
+                    placeholder="Enter the email subject..."
+                >
+            </div>
+
+
+            <div class="input-group">
+                <label for="body">Email Body</label>
+
+                <textarea
+                    id="body"
+                    placeholder="Paste the email body here..."
+                ></textarea>
+            </div>
+
+
+            <button id="analyze-button">
+                Analyze Email
+            </button>
+
+            <p id="error-message" class="error hidden"></p>
+
+        </section>
+
+
+        <section id="result-card" class="card result-card hidden">
+
+            <div class="result-header">
+
+                <div>
+                    <span class="result-label">CLASSIFICATION</span>
+
+                    <h2 id="result-label">
+                        —
+                    </h2>
+                </div>
+
+                <div id="result-icon" class="result-icon">
+                    ?
+                </div>
+
+            </div>
+
+
+            <div class="probabilities">
+
+                <div class="probability-row">
+
+                    <div class="probability-info">
+                        <span>Phishing</span>
+                        <strong id="phishing-probability">
+                            0%
+                        </strong>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div
+                            id="phishing-bar"
+                            class="progress-fill phishing"
+                        ></div>
+                    </div>
+
+                </div>
+
+
+                <div class="probability-row">
+
+                    <div class="probability-info">
+                        <span>Legitimate</span>
+                        <strong id="legitimate-probability">
+                            0%
+                        </strong>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div
+                            id="legitimate-bar"
+                            class="progress-fill legitimate"
+                        ></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="disclaimer">
+                <strong>Model output:</strong>
+                These probabilities represent the classifier's confidence
+                based on patterns learned from its training data. They should
+                not be treated as a definitive determination of whether an
+                email is malicious.
+            </div>
+
+        </section>
+
+
+        <footer>
+            <p>
+                Word + character TF-IDF &bull; Logistic Regression
+            </p>
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
