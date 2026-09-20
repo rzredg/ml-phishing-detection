@@ -2,3 +2,4 @@
 __pycache__/
 *.pyc
 .vscode/
+data/CEAS_08.csv
