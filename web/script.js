@@ -45,7 +45,7 @@ async function analyzeEmail() {
     try {
 
         const response = await fetch(
-            "http://127.0.0.1:5000/api/predict",
+            "https://ml-phishing-detection-api.onrender.com/api/predict",
             {
                 method: "POST",
 
