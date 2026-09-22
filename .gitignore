@@ -2,4 +2,17 @@
 __pycache__/
 *.pyc
 .vscode/
-data/CEAS_08.csv
+
+# Analysis outputs
+*.csv
+
+# Local analysis scripts
+src/adversarial_test.py
+src/analyze_adversarial_failures.py
+src/analyze_flip_groups.py
+src/analyze_flip_templates.py
+src/analyze_flipped_features.py
+src/analyze_short_subject_baseline.py
+src/analyze_subject_length.py
+src/batch_adversarial_test.py
+src/show_flip_examples.py

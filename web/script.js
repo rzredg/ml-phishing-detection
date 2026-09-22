@@ -22,8 +22,30 @@ const legitimateBar =
 const errorMessage =
     document.getElementById("error-message");
 
+const phishingExample =
+    document.getElementById("phishing-example");
+
+const legitimateExample =
+    document.getElementById("legitimate-example");
+
 
 analyzeButton.addEventListener("click", analyzeEmail);
+
+phishingExample.addEventListener("click", () => {
+    subjectInput.value = "Your account requires verification";
+    bodyInput.value =
+        "We detected unusual activity on your account. " +
+        "Please verify your information immediately by " +
+        "following the link below.";
+});
+
+legitimateExample.addEventListener("click", () => {
+    subjectInput.value = "Meeting tomorrow";
+    bodyInput.value =
+        "Hi, just a reminder that we are meeting tomorrow " +
+        "at 10 AM. Please let me know if you need anything " +
+        "before then.";
+});
 
 
 async function analyzeEmail() {
