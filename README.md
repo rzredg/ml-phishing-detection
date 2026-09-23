@@ -1,6 +1,6 @@
 # ML Phishing Detection
 
-A machine learning system that classifies email messages as **phishing** or **legitimate** using natural language features extracted from the email subject and body.
+Built over the course of 4 months, this is a machine learning system that classifies email messages as **phishing** or **legitimate** using natural language features extracted from the email subject and body.
 
 The project uses TF-IDF features with both word-level and character-level n-grams and a Logistic Regression classifier. The trained model is exposed through a Flask API and a web interface for interactive predictions.
 
